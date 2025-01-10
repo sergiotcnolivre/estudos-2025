@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface TaskRepository extends JpaRepository<Task, Long> {
 
-    Task findByTitle(String title);
+    List<Task> findByTitle(String title);
 
     List<Task> findByPriority(PRIORITY priority);
 }
