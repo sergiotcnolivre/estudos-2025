@@ -4,8 +4,9 @@ import com.sergio.todo.enums.PRIORITY;
 import jakarta.persistence.*;
 import lombok.*;
 
+
 @Entity
-@Table(name = "TASKS")
+@Table(name = "task")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -29,4 +30,5 @@ public class Task {
         this.priority = priority;
         this.title = title;
     }
+
 }
