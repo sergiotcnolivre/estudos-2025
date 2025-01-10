@@ -25,4 +25,10 @@ public class Task {
 
     @Enumerated(EnumType.STRING)
     private PRIORITY priority;
+
+    public Task(String title, String description, PRIORITY priority) {
+        this.description = description;
+        this.priority = priority;
+        this.title = title;
+    }
 }
